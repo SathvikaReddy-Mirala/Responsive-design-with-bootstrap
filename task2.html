@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+    /* Custom styles */
+body {
+  padding-top: 56px;
+  background-color:aqua;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.card-header {
+  background-color:navy;
+  font-weight: bold;
+  color:white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
+        <!-- Main Content -->
+        <div class="container mt-4">
+          <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-header">
+                  Sidebar
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Some sidebar content</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Main Content Area -->
+            <div class="col-md-9">
+              <div class="card">
+                <div class="card-header">
+                  Main Content
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Some main content</p>
+                  <button type="button" class="btn btn-primary">A Button</button>
+                </div>
+              </div>
+              
+              <!-- Form -->
+              <form class="mt-4">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+      
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
